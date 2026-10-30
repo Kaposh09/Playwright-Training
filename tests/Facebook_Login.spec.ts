@@ -7,6 +7,7 @@ test('Facebook Login', async({page}) =>{
     await page.getByLabel('Email or mobile number').isVisible();
     await page.getByLabel('Email or mobile number').click();
     await page.getByLabel('Email or mobile number').fill('Kaposh09')
+    await page.waitForTimeout(3000);
 
     await page.getByLabel('Password').isVisible();
     await page.getByLabel('Password').click();
