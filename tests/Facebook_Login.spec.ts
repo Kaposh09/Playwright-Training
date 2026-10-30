@@ -13,6 +13,6 @@ test('Facebook Login', async({page}) =>{
     await page.getByLabel('Password').fill('08241987')
     await page.waitForTimeout(3000);
 
-    await page.getByLabel('Log Ins').click();
+    await page.getByLabel('Log In').click();
     await page.waitForTimeout(3000);
 })
